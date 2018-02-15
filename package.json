@@ -1,0 +1,22 @@
+{
+  "name": "kolache-site",
+  "version": "1.0.0",
+  "description": "Documentation site for Kolache",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "hugo server -p 1315",
+    "kolache":
+      "postcss --use kolache -c postcss.config.js -o themes/kolache/static/css/styles.css themes/kolache/src/css/index.css",
+    "watch": "watch \"npm run kolache\" themes/kolache/src"
+  },
+  "author": "Keith J. Grant",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss-cli": "^5.0.0",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "kolache": "0.0.2"
+  }
+}
