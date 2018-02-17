@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  {{partial "meta.html"}}
+</head>
+<body>
+  {{partial "header.html"}}
+
+  <main>
+  {{range .Data.Pages}}
+    <h2>{{.Title}}</h2>
+    <div>{{.Content}}</div>
+  {{end}}
+  </main>
+</body>
+</html>

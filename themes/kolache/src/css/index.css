@@ -1,9 +1,9 @@
 $include-base-styles: false;
-@import 'kolache/modules/theme';
+@import "kolache/modules/theme";
 
 $gray-90: hsl(200, 15%, 90%);
 
-@import 'kolache/modules/header-bar' as .page-header {
+@import "kolache/modules/header-bar" as .page-header {
   $border: 1px solid $gray-90;
 }
 .page-header__brand {
@@ -12,6 +12,6 @@ $gray-90: hsl(200, 15%, 90%);
   border-right: 1px solid $gray-90;
 }
 
-@import 'kolache/modules/navmenu' as .main-nav {
+@import "kolache/modules/navmenu" as .main-nav {
   $offset-padding: 1em 1em;
 }
