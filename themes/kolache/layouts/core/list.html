@@ -6,11 +6,28 @@
 <body>
   {{partial "header.html"}}
 
-  <main>
-  {{range .Data.Pages}}
-    <h2>{{.Title}}</h2>
-    <div>{{.Content}}</div>
-  {{end}}
-  </main>
+  <div class="l-documentation">
+    <nav class="l-documentation__nav">
+      <ul class="side-nav">
+      {{range .Data.Pages}}
+        <li>
+          <a href="#{{.Title}}">{{.Title}}</a>
+        </li>
+      {{end}}
+    </nav>
+    <main class="l-documentation__main">
+      <h1>{{.Title}}</h1>
+      <div>{{.Content}}</div>
+      {{range .Data.Pages}}
+        <div class="documentation-block">
+          <h2>{{.Title}}</h2>
+          {{- if .Params.description -}}
+            <p class="lead">{{.Params.description}}</p>
+          {{- end -}}
+          <div>{{.Content}}</div>
+        </div>
+      {{end}}
+    </main>
+  </div>
 </body>
 </html>

@@ -4,7 +4,10 @@
   {{partial "meta.html"}}
 </head>
 <body>
-  <h1>{{.Title}}</h1>
-  {{.Content}}
+  {{partial "header.html"}}
+  <main class="l-container">
+    <h1>{{.Title}}</h1>
+    {{.Content}}
+  </main>
 </body>
 </html>

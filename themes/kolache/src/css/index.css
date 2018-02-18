@@ -1,17 +1,66 @@
-$include-base-styles: false;
-@import "kolache/modules/theme";
-
-$gray-90: hsl(200, 15%, 90%);
-
-@import "kolache/modules/header-bar" as .page-header {
-  $border: 1px solid $gray-90;
+@import "kolache/core/theme";
+@import "kolache/core/header-bar" as .page-header {
+  $border: 1px solid $gray-9;
 }
 .page-header__brand {
   margin-right: 3em;
   padding-right: 3em;
-  border-right: 1px solid $gray-90;
+  border-right: 1px solid $gray-9;
 }
 
-@import "kolache/modules/navmenu" as .main-nav {
+@import "kolache/core/centered-container" as .l-container {
+  $width: 55em;
+  $breakpoint: 57em;
+}
+
+@import "kolache/core/navmenu" as .main-nav {
   $offset-padding: 1em 1em;
+}
+
+.l-documentation {
+  display: flex;
+}
+.l-documentation__nav {
+  flex: 0 1 auto;
+}
+.l-documentation__main {
+  flex: 1 1 auto;
+  margin: 0 3em;
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-weight: $font-weight-light;
+}
+
+@import "kolache/core/nav:stacked" as .side-nav {
+  $offset-padding: 0.5em 1em;
+}
+
+@import "kolache/core/button" as .button;
+
+code {
+  background-color: $gray-10;
+  color: $color-primary-dark;
+}
+
+.doc-example__rendered {
+  padding: $padding;
+  border: 1px solid $gray-6;
+  border-top-right-radius: $border-radius;
+  border-top-left-radius: $border-radius;
+  background-color: $white;
+}
+.doc-example__markup {
+  margin-top: 0;
+  padding: $padding;
+  border: 1px solid $gray-6;
+  border-radius: $border-radius;
+  color: $gray-5;
+  background-color: $gray-10;
+}
+.doc-example__rendered + .doc-example__markup {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
