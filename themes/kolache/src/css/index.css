@@ -2,10 +2,12 @@
 @import "kolache/core/header-bar" as .page-header {
   $border: 1px solid $gray-9;
 }
-.page-header__brand {
-  margin-right: 3em;
-  padding-right: 3em;
-  border-right: 1px solid $gray-9;
+@media (min-width: 600px) {
+  .page-header__brand {
+    margin-right: 3em;
+    padding-right: 3em;
+    border-right: 1px solid $gray-9;
+  }
 }
 
 @import "kolache/core/centered-container" as .l-container {
@@ -13,11 +15,9 @@
   $breakpoint: 57em;
 }
 
-@import "kolache/core/navmenu" as .main-nav {
-  $offset-padding: 1em 1em;
-}
-
 .l-documentation {
+  max-width: 65em;
+  margin: 0 auto;
   display: flex;
 }
 .l-documentation__nav {
@@ -28,16 +28,23 @@
   margin: 0 3em;
 }
 
-.lead {
-  font-size: 1.5rem;
-  font-weight: $font-weight-light;
+@import "kolache/core/navmenu" as .main-nav {
+  $offset-padding: 1em 1em;
 }
+
+@import "kolache/core/lead" as .lead;
 
 @import "kolache/core/nav:stacked" as .side-nav {
   $offset-padding: 0.5em 1em;
 }
 
 @import "kolache/core/button" as .button;
+@import "kolache/core/button:color" as .button--danger {
+  $bg-color: $color-danger;
+}
+@import "kolache/core/button:size" as .button--large {
+  $size: 1.5rem;
+}
 
 code {
   background-color: $gray-10;
@@ -63,4 +70,16 @@ code {
   border-top: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+}
+
+.page-title {
+  margin-top: 1.25em;
+  text-align: center;
+  font-size: 3.05rem;
+  font-weight: $font-weight-black;
+  letter-spacing: -0.03em;
+}
+
+.text-center {
+  text-align: center !important;
 }
