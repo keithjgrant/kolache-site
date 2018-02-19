@@ -32,6 +32,7 @@
 
 @import "kolache/core/navmenu" as .main-nav {
   $offset-padding: 1em 1em;
+  $wrap: true;
 }
 
 @import "kolache/core/lead" as .lead;
