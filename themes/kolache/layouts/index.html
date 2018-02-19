@@ -7,6 +7,9 @@
   {{partial "header.html"}}
   <main class="l-container">
     <h1 class="page-title">{{.Title}}</h1>
+    {{- if .Params.description -}}
+      <p class="lead text-center">{{.Params.description}}</p>
+    {{- end -}}
     <div>{{.Content}}</div>
   </main>
 </body>

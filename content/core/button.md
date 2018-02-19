@@ -40,7 +40,7 @@ Variables:
 {{< rendered-example >}}<button class="button button--large">Button</button>{{< /rendered-example >}}
 
 {{< code-example >}}@import "kolache/core/button:size" as .button--large {
-  $size: 1.5rem;
+  $size: 1.25rem;
 };{{< /code-example >}}
 
 Variables:

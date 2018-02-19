@@ -31,4 +31,13 @@ PostCSS is a tool for transforming your CSS. It’s similar to CSS preprocessors
 
 ## It’s installed! Now what?
 
-Start writing some CSS! See [Usage](/getting-started/usage) to learn how Kolache works.
+Start writing some CSS!
+
+Begin your stylesheet by importing a theme and the base styles. See [How it Works](/getting-started/how-it-works) for more on this.
+
+```css
+@import "kolache/core/theme";
+@import "kolache/core/base";
+```
+
+With that in place, you can start [importing and customizing packages](/getting-started/usage), or write styles of your own.

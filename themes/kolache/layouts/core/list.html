@@ -17,7 +17,10 @@
     </nav>
     <main class="l-documentation__main">
       <h1 class="page-title">{{.Title}}</h1>
-      <div class="lead text-center">{{.Content}}</div>
+      {{- if .Params.description -}}
+        <p class="lead text-center">{{.Params.description}}</p>
+      {{- end -}}
+      <div>{{.Content}}</div>
       {{range .Data.Pages}}
         <div class="documentation-block">
           <h2>{{.Title}}</h2>
