@@ -2,8 +2,13 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1,
 shrink-to-fit=no">
-<title>Kolache</title>
+<title>Kolache{{if .Title}} - {{.Title}}{{end}}</title>
 <link rel="stylesheet" href="/css/styles.css">
+
+<meta name="twitter:card" content="summary">
+<meta name="og:title" content="Kolache{{if .Title}} - {{.Title}}{{end}}">
+<meta name="twitter:description" content="{{if .Params.description}}{{.Params.description}}{{else}}Reuse CSS packages in muliple projects and across themes{{end}}">
+
 <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'">-->
 <meta name="theme-color" content="#ffffff">
 <meta name="description" content="Import and export CSS packages">
