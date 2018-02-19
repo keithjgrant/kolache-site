@@ -10,6 +10,8 @@ If you ever wished you could simply `npm install` a bit of CSS, Kolache makes it
 
 You choose the selector it imports as, so if `.button` collides with a class name you’re already using, you can import to a different class name of your choosing.
 
+<p class="lead">Part preprocessor, part CSS framework, part package manager</p>
+
 Kolache will import from a relative directory or from your `node_modules`.
 
 Customize packages by setting parameter variables:
