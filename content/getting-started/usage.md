@@ -22,7 +22,7 @@ If a stylesheet *exports* a package (see [development](/development)), you can i
 @import "path/to/package" as .classname;
 ```
 
-This finds an exported package in the indicated file and imports it as the class name (or other selector) you specify. For instance, `@import "button" as .button;` will import the package in `button.css` under the class name `button`. If you add `<button class="button">` to your page, it will now have that package’s styles.
+This finds an exported package in the indicated file and imports it as the class name (or other selector) you specify. For instance, `@import "button" as .btn;` will import the package in `button.css` under the class name `btn`. If you add `<button class="btn">` to your page, it will now have that package’s styles.
 
 The pathname may be relative to the current directory, or it can be relative to your `node_modules` directory. With Kolache installed in your npm dependencies, you can import the [core packages](/core) directly. For example, to import the button package:
 
