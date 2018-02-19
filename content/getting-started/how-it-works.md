@@ -16,7 +16,7 @@ In order for CSS packages to work across multiple sites, Kolache provides a pred
 
 Kolache automatically injects [normalize.css](https://necolas.github.io/normalize.css/) at the beginning of your stylesheet. If you already have Normalize on your page, you can skip this step by passing the `includeNormalize: false` option in your PostCSS config.
 
-## Theme variables
+## Theme Variables
 
 Kolache packages rely on a set of set of pre-defined Sass-style variables (e.g. `$color-primary`). These are all defined in a theme stylesheet. A theme stylesheet must define values for all of these variables.
 

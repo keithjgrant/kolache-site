@@ -18,12 +18,12 @@
     <main class="l-documentation__main">
       <h1 class="page-title">{{.Title}}</h1>
       {{- if .Params.description -}}
-        <p class="lead text-center">{{.Params.description}}</p>
+        <p class="lead text-center">{{.Params.description | markdownify}}</p>
       {{- end -}}
       <div>{{.Content}}</div>
       {{range .Data.Pages}}
         <div class="documentation-block">
-          <h2>{{.Title}}</h2>
+          <h2 id="{{.Title}}">{{.Title}}</h2>
           {{- if .Params.description -}}
             <p class="lead">{{.Params.description}}</p>
           {{- end -}}
