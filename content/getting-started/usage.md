@@ -34,7 +34,7 @@ The package’s styles will now be part of your stylesheet.
 
 ### Customizing packages
 
-Packages can depend on your [theme variables](/getting-started/how-it-works/#theme-variables). This way, it will automatically adapt to the colors, border radius, and other styles defined in your theme.
+Packages typically depend on your [theme variables](/getting-started/how-it-works/#theme-variables). This way, it will automatically adapt to the colors, border radius, and other styles defined in your theme.
 
 This may not be perfectly to your liking, however, so you can override variables used by the package. These changes will be *local*, applied only to this package. It looks like this:
 
