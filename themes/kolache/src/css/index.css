@@ -97,3 +97,24 @@ code {
   color: $color-danger;
   border-color: $color-danger;
 }
+
+.page-footer {
+  padding: 1em;
+  background-color: $gray-6;
+  font-size: 0.8rem;
+  text-align: center;
+
+  a:any-link {
+    color: black;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  main {
+    flex-grow: 1;
+  }
+}
