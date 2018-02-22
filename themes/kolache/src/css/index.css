@@ -18,16 +18,30 @@
 }
 
 .l-documentation {
-  max-width: 65em;
-  margin: 0 auto;
-  display: flex;
+  max-width: 100%;
+  padding: 0 1em;
 }
 .l-documentation__nav {
   flex: 0 1 auto;
 }
 .l-documentation__main {
   flex: 1 1 auto;
-  margin: 0 3em;
+  overflow: auto;
+}
+@media (min-width: 35em) {
+  .l-documentation {
+    display: flex;
+  }
+
+  .l-documentation__main {
+    margin-left: 3em;
+  }
+}
+@media (min-width: 67em) {
+  .l-documentation {
+    max-width: 65em;
+    margin: 0 auto;
+  }
 }
 
 @import "kolache/core/navmenu" as .main-nav {
@@ -69,6 +83,7 @@ code {
   border-radius: $border-radius;
   color: $gray-5;
   background-color: $gray-10;
+  overflow: auto;
 }
 .doc-example__rendered + .doc-example__markup {
   border-top: 0;
@@ -109,7 +124,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  main {
+  > main,
+  > .main {
     flex-grow: 1;
   }
 }
