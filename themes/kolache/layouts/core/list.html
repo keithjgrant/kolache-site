@@ -9,9 +9,12 @@
   <div class="l-documentation main">
     <nav class="l-documentation__nav">
       <ul class="side-nav">
+        <li>
+          <a href="/core/">Typography</a>
+        </li>
       {{range .Data.Pages}}
         <li>
-          <a href="#{{.Title}}">{{.Title}}</a>
+          <a href="{{.Permalink}}">{{.Title}}</a>
         </li>
       {{end}}
     </nav>
@@ -21,15 +24,6 @@
         <p class="lead text-center">{{.Params.description | markdownify}}</p>
       {{- end -}}
       <div>{{.Content}}</div>
-      {{range .Data.Pages}}
-        <div class="documentation-block">
-          <h2 id="{{.Title}}">{{.Title}}</h2>
-          {{- if .Params.description -}}
-            <p class="lead">{{.Params.description}}</p>
-          {{- end -}}
-          <div>{{.Content}}</div>
-        </div>
-      {{end}}
     </main>
   </div>
   {{partial "footer.html"}}

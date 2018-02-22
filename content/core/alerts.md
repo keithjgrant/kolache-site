@@ -8,7 +8,9 @@ description:
 
 {{< code-example >}}@import "kolache/core/alerts" as .alert;{{< /code-example >}}
 
-{{< rendered-example >}}<div class="alert">This is an alert. <a href="#">Links match the look</a>, too.</div>{{< /rendered-example >}}
+{{< rendered-example >}}<div class="alert">
+  This is an alert. <a href="#">Links match the look</a>, too.
+</div>{{< /rendered-example >}}
 
 
 Variables:
@@ -25,7 +27,9 @@ Variables:
   $color: $brand-danger;
 };{{< /code-example >}}
 
-{{< rendered-example >}}<div class="alert alert--danger">This is an alert. <a href="#">Links match the look</a>, too.</div>{{< /rendered-example >}}
+{{< rendered-example >}}<div class="alert alert--danger">
+  This is an alert. <a href="#">Links match the look</a>, too.
+</div>{{< /rendered-example >}}
 
 
 Variables:
