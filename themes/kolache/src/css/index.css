@@ -48,10 +48,11 @@
 @import "kolache/core/button:size" as .button--large {
   $size: 1.25rem;
 }
+@import "kolache/core/button:outline" as .button--outline;
 
 code {
   background-color: $gray-10;
-  color: $color-primary-dark;
+  color: color-mod($color-primary lightness(-15%));
 }
 
 .doc-example__rendered {
@@ -87,15 +88,9 @@ code {
   text-align: center !important;
 }
 
-.alert {
-  padding: $offset-padding;
-  border-radius: $border-radius;
-  border: 1px solid $color-primary;
-  color: $color-primary-dark;
-}
-.alert--danger {
-  color: $color-danger;
-  border-color: $color-danger;
+@import "kolache/core/alert" as .alert;
+@import "kolache/core/alert:color" as .alert--danger {
+  $color: $color-danger;
 }
 
 .page-footer {
