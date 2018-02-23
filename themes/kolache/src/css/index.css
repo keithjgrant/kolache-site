@@ -118,6 +118,9 @@ pre code {
   $color: $color-danger;
 }
 
+@import "kolache/core/form:group" as .form-group;
+@import "kolache/core/form:field" as .form-field;
+
 .page-footer {
   padding: 1em;
   background-color: $gray-6;
