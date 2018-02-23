@@ -1,7 +1,8 @@
 ---
-title: "Core Packages"
+title: "Core"
 date: 2018-02-14T16:29:45-05:00
 description: These core packages are provided in the Kolache library. Use `@import` to import them from `kolache/core/*`.
+weight: 1
 ---
 
 <div class="alert alert--danger">
@@ -34,6 +35,16 @@ If you wish to use a different font, re-assign this variable prior to `@import`i
 This variable is then assigned to `$font-family-heading`, which is applied to `<h1>` through `<h4>` headings. Assign a different font stack to this variable if you want a different headings font.
 
 ### Font Weights
+
+Font weights are set by four variables. These are set by the theme and may be overridden either globally or in each package where they are referenced.
+
+* `$font-weight-light`
+* `$font-weight-normal`
+* `$font-weight-bold`
+* `$font-weight-black`
+
+Not all fonts support light and black weights. In those instances, the browser will fall back to normal and bold weights, respectively.
+
 <!-- font scalar? -->
 <!-- ems, paddings, etc? -->
 

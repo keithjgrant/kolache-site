@@ -1,0 +1,10 @@
+<ul class="side-nav">
+  {{range sort (where .Site.Pages "Section" .Section) ".Params.title"}}
+    <li>
+      <a href="{{.Permalink}}">{{.Title}}</a>
+    </li>
+  {{- end -}}
+</ul>
+
+<!-- range sort (where .Site.Pages "Section" .Section) ".Params.title" -->
+<!-- range where .Site.Pages "Section" .Section -->

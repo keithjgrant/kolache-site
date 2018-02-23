@@ -18,11 +18,11 @@
 }
 
 .l-documentation {
-  max-width: 100%;
+  width: 100%;
   padding: 0 1em;
 }
 .l-documentation__nav {
-  flex: 0 1 auto;
+  flex: 0 0 auto;
 }
 .l-documentation__main {
   flex: 1 1 auto;
@@ -39,7 +39,7 @@
 }
 @media (min-width: 67em) {
   .l-documentation {
-    max-width: 65em;
+    width: 65em;
     margin: 0 auto;
   }
 }
@@ -63,10 +63,20 @@
   $size: 1.25rem;
 }
 @import "kolache/core/button:outline" as .button--outline;
+@import "kolache/core/button:outline" as .button--outline--danger {
+  $color: $color-danger;
+}
+@import "kolache/core/button:link" as .button-link;
+
+@import "kolache/core/button-group" as .button-group;
 
 code {
   background-color: $gray-10;
   color: color-mod($color-primary lightness(-15%));
+}
+
+pre code {
+  background-color: transparent;
 }
 
 .doc-example__rendered {
@@ -128,4 +138,23 @@ body {
   > .main {
     flex-grow: 1;
   }
+}
+
+.documentation-content {
+  margin-bottom: 3rem;
+
+  h1,
+  h2,
+  h3 {
+    margin-top: 1em;
+
+    @nest table & {
+      margin-top: 0;
+    }
+  }
+
+  @import "kolache/core/table" as table {
+    $padding: $padding-small;
+  }
+  @import "kolache/core/table:bordered" as table;
 }

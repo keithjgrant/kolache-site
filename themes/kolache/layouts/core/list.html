@@ -8,22 +8,14 @@
 
   <div class="l-documentation main">
     <nav class="l-documentation__nav">
-      <ul class="side-nav">
-        <li>
-          <a href="/core/">Typography</a>
-        </li>
-      {{range .Data.Pages}}
-        <li>
-          <a href="{{.Permalink}}">{{.Title}}</a>
-        </li>
-      {{end}}
+      {{partial "side-nav.html" .}}
     </nav>
     <main class="l-documentation__main">
-      <h1 class="page-title">{{.Title}}</h1>
+      <h1 class="page-title">Core Packages</h1>
       {{- if .Params.description -}}
         <p class="lead text-center">{{.Params.description | markdownify}}</p>
       {{- end -}}
-      <div>{{.Content}}</div>
+      <div class="documentation-content">{{.Content}}</div>
     </main>
   </div>
   {{partial "footer.html"}}

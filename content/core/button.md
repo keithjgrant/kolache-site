@@ -1,16 +1,17 @@
 ---
 title: "Buttons"
 date: 2018-02-14T16:29:45-05:00
-description: I bet you’re gonna need some buttons. Kolache includes a basic button and some common variants.
+description: I bet you’re gonna need some buttons. Kolache includes a basic button and several common variants.
 ---
 
-`kolache/core/button`
+{{< code-example >}}
+@import "kolache/core/button" as .button;{{< /code-example >}}
 
-{{< code-example >}}@import "kolache/core/button" as .button;{{< /code-example >}}
-
-{{< rendered-example >}}<button class="button">Button</button>
+{{< rendered-example >}}
+<button class="button">Button</button>
 <a href="#" class="button">Link</a>
-<input type="button" class="button" value="Input" />{{< /rendered-example >}}
+<input type="button" class="button" value="Input" />
+{{< /rendered-example >}}
 
 Variables:
 
@@ -20,17 +21,21 @@ Variables:
 * `$offset-padding`
 * `$border-radius`
 
-{{< rendered-example >}}<button class="button" disabled>Disabled button</button>{{< /rendered-example >}}
+{{< rendered-example >}}
+<button class="button" disabled>Disabled button</button>
+{{< /rendered-example >}}
 
 ### Color variant
 
-`kolache/core/button:color`
-
-{{< code-example >}}@import "kolache/core/button:color" as .button--danger {
+{{< code-example >}}
+@import "kolache/core/button:color" as .button--danger {
   $bg-color: $color-danger;
-  };{{< /code-example >}}
+  };
+{{< /code-example >}}
 
-{{< rendered-example >}}<button class="button button--danger">Button</button>{{< /rendered-example >}}
+{{< rendered-example >}}
+<button class="button button--danger">Button</button>
+{{< /rendered-example >}}
 
 Variables:
 
@@ -39,13 +44,15 @@ Variables:
 
 ### Size variant
 
-`kolache/core/button:size`
-
-{{< code-example >}}@import "kolache/core/button:size" as .button--large {
+{{< code-example >}}
+@import "kolache/core/button:size" as .button--large {
   $size: 1.25rem;
-  };{{< /code-example >}}
+  };
+{{< /code-example >}}
 
-{{< rendered-example >}}<button class="button button--large">Button</button>{{< /rendered-example >}}
+{{< rendered-example >}}
+<button class="button button--large">Button</button>
+{{< /rendered-example >}}
 
 Variables:
 
@@ -54,12 +61,42 @@ Variables:
 
 ### Outline button
 
-{{< code-example >}}@import "kolache/core/button:outline" as .button--outline;{{< /code-example>}}
+{{< code-example >}}
+@import "kolache/core/button:outline" as .button--outline;
+@import "kolache/core/button:outline" as .button--outline--danger {
+  $color: $color-danger;
+};
+{{< /code-example>}}
 
-{{< rendered-example >}}<button class="button button--outline">Outline button</button>{{< /rendered-example >}}
+{{< rendered-example >}}
+<button class="button button--outline">Outline button</button>
+<button class="button button--outline--danger">Outline button</button>
+{{< /rendered-example >}}
 
 Variables:
 
 * `$color` - defaults to `$color-primary`
 * `$border-color` - defaults to `$color`
 * `$bg-color` - defaults to `transparent`
+
+### Button link
+
+If it doesn’t have an `href` attribute, you should be using a `<button>`. This variant makes a `<button>` appear and behave visually like an `<a>` so you can do just that.
+
+Unlike other button variants, this does not need to be combined with the main button class (though it works just the same if you do add both classes).
+
+{{< code-example >}}
+@import "kolache/core/button:link" as .button-link;
+{{< /code-example>}}
+
+{{< rendered-example >}}
+A <button class="button-link">link button</button> looks just like
+<a href="#">a normal link</a>.
+{{< /rendered-example >}}
+
+Variables:
+
+* `$link-color`
+* `$link-color-visited`
+* `$link-color-hover`
+* `$link-color-active`

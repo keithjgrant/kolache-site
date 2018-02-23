@@ -18,6 +18,7 @@ Variables:
 * `$color` - Text color. Defaults to a 30% darker version of `$color-primary`
 * `$bg-color` - Background color. Defaults to a much lighter shade of `$color`
 * `$link-color` - Color for any links in the alert. Defaults to a 15% darker shade of `$color`
+* `$margin` - Defaults to `$default-margin` on the bottom margin
 * `$padding-offset-large`
 * `$border-radius`
 
