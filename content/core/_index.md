@@ -26,7 +26,7 @@ The base partial sets some default styles such as headings, tables, and other el
 
 The default Kolache theme uses a native font stack. This is assigned to the `$font-family` variable:
 
-{{< code-example >}}$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+{{< code-example css >}}$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol" !default;{{< /code-example >}}
 
@@ -50,11 +50,13 @@ Not all fonts support light and black weights. In those instances, the browser w
 
 ## Headings
 
-| Markup      | Example              |
-| ----------- | -------------------- |
-| `<h1></h1>` | <h1>Level One</h1>   |
-| `<h2></h2>` | <h2>Level Two</h2>   |
-| `<h3></h3>` | <h3>Level Three</h3> |
-| `<h4></h4>` | <h4>Level Four</h4>  |
-| `<h5></h5>` | <h5>Level Five</h5>  |
-| `<h6></h6>` | <h6>Level Six</h6>   |
+Heading styles are applied to `<h1>` through `<h6>` elements. Corresponding class names can also be used when you need to match the style but want to use a different HTML element.
+
+| Markup                              | Example                       |
+| ----------------------------------- | ----------------------------- |
+| `<h1></h1>`<br>`<p class="h1"></p>` | <p class="h1">Level One</p>   |
+| `<h2></h2>`<br>`<p class="h2"></p>` | <p class="h2">Level Two</p>   |
+| `<h3></h3>`<br>`<p class="h3"></p>` | <p class="h3">Level Three</p> |
+| `<h4></h4>`<br>`<p class="h4"></p>` | <p class="h4">Level Four</p>  |
+| `<h5></h5>`<br>`<p class="h5"></p>` | <p class="h5">Level Five</p>  |
+| `<h6></h6>`<br>`<p class="h6"></p>` | <p class="h6">Level Six</p>   |

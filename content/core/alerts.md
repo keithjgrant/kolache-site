@@ -6,11 +6,15 @@ description:
 
 `kolache/core/alerts`
 
-{{< code-example >}}@import "kolache/core/alerts" as .alert;{{< /code-example >}}
+{{< code-example css >}}
+@import "kolache/core/alerts" as .alert;
+{{< /code-example >}}
 
-{{< rendered-example >}}<div class="alert">
+{{< rendered-example >}}
+<div class="alert">
   This is an alert. <a href="#">Links match the look</a>, too.
-</div>{{< /rendered-example >}}
+</div>
+{{< /rendered-example >}}
 
 
 Variables:
@@ -24,13 +28,17 @@ Variables:
 
 ### Color variant
 
-{{< code-example >}}@import "kolache/core/alerts:color" as .alert--danger {
+{{< code-example css >}}
+@import "kolache/core/alerts:color" as .alert--danger {
   $color: $brand-danger;
-};{{< /code-example >}}
+};
+{{< /code-example >}}
 
-{{< rendered-example >}}<div class="alert alert--danger">
+{{< rendered-example >}}
+<div class="alert alert--danger">
   This is an alert. <a href="#">Links match the look</a>, too.
-</div>{{< /rendered-example >}}
+</div>
+{{< /rendered-example >}}
 
 
 Variables:

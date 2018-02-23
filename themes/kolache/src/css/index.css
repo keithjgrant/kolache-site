@@ -1,6 +1,17 @@
 @import "kolache/core/theme";
 @import "kolache/core/base";
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  > main,
+  > .main {
+    flex-grow: 1;
+  }
+}
+
 @import "kolache/core/header-bar" as .page-header {
   $border: 1px solid $gray-9;
 }
@@ -55,20 +66,7 @@
   $offset-padding: 0.5em 1em;
 }
 
-@import "kolache/core/button" as .button;
-@import "kolache/core/button:color" as .button--danger {
-  $bg-color: $color-danger;
-}
-@import "kolache/core/button:size" as .button--large {
-  $size: 1.25rem;
-}
-@import "kolache/core/button:outline" as .button--outline;
-@import "kolache/core/button:outline" as .button--outline--danger {
-  $color: $color-danger;
-}
-@import "kolache/core/button:link" as .button-link;
-
-@import "kolache/core/button-group" as .button-group;
+@import "demos";
 
 code {
   background-color: $gray-10;
@@ -113,14 +111,6 @@ pre code {
   text-align: center !important;
 }
 
-@import "kolache/core/alert" as .alert;
-@import "kolache/core/alert:color" as .alert--danger {
-  $color: $color-danger;
-}
-
-@import "kolache/core/form:group" as .form-group;
-@import "kolache/core/form:field" as .form-field;
-
 .page-footer {
   padding: 1em;
   background-color: $gray-6;
@@ -129,17 +119,6 @@ pre code {
 
   a:any-link {
     color: black;
-  }
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-
-  > main,
-  > .main {
-    flex-grow: 1;
   }
 }
 
@@ -161,3 +140,5 @@ body {
   }
   @import "kolache/core/table:bordered" as table;
 }
+
+@import "prism";

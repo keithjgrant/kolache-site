@@ -4,8 +4,9 @@ date: 2018-02-14T16:29:45-05:00
 description: I bet you’re gonna need some buttons. Kolache includes a basic button and several common variants.
 ---
 
-{{< code-example >}}
-@import "kolache/core/button" as .button;{{< /code-example >}}
+{{< code-example css >}}
+@import "kolache/core/button" as .button;
+{{< /code-example >}}
 
 {{< rendered-example >}}
 <button class="button">Button</button>
@@ -27,13 +28,17 @@ Variables:
 
 ### Color variant
 
-{{< code-example >}}
+{{< code-example css >}}
+@import "kolache/core/button:color" as .button--success {
+  $bg-color: $color-success;
+};
 @import "kolache/core/button:color" as .button--danger {
   $bg-color: $color-danger;
-  };
+};
 {{< /code-example >}}
 
 {{< rendered-example >}}
+<button class="button button--success">Button</button>
 <button class="button button--danger">Button</button>
 {{< /rendered-example >}}
 
@@ -44,7 +49,7 @@ Variables:
 
 ### Size variant
 
-{{< code-example >}}
+{{< code-example css >}}
 @import "kolache/core/button:size" as .button--large {
   $size: 1.25rem;
   };
@@ -61,7 +66,7 @@ Variables:
 
 ### Outline button
 
-{{< code-example >}}
+{{< code-example css >}}
 @import "kolache/core/button:outline" as .button--outline;
 @import "kolache/core/button:outline" as .button--outline--danger {
   $color: $color-danger;
@@ -85,7 +90,7 @@ If it doesn’t have an `href` attribute, you should be using a `<button>`. This
 
 Unlike other button variants, this does not need to be combined with the main button class (though it works just the same if you do add both classes).
 
-{{< code-example >}}
+{{< code-example css >}}
 @import "kolache/core/button:link" as .button-link;
 {{< /code-example>}}
 
