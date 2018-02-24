@@ -6,7 +6,7 @@ weight: 1
 ---
 
 <div class="alert alert--danger">
-The core packages are still a work in progress. They are subject to change while in early development. Some packages may be documented here before the are published to npm.
+The core packages are still a work in progress. They are subject to change while in early development. I’m adding to this documentation as I build packages, so some may be documented here before the are published to npm.
 </div>
 
 ## Base styles
