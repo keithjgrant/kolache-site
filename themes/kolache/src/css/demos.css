@@ -30,3 +30,6 @@
 @import "kolache/core/form:feedback" as .has-error {
   $color: $color-danger;
 }
+
+@import "kolache/core/dropdown" as .dropdown;
+@import "kolache/core/nav:stacked" as .nav-stacked;
