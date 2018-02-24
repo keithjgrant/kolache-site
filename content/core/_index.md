@@ -6,7 +6,7 @@ weight: 1
 ---
 
 <div class="alert alert--danger">
-The core packages are still a work in progress. They are subject to drastic change while in early development. They are not included in the currently published version of Kolache on npm (v0.0.2).
+The core packages are still a work in progress. They are subject to change while in early development. Some packages may be documented here before the are published to npm.
 </div>
 
 ## Base styles
