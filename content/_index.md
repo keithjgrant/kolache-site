@@ -1,11 +1,11 @@
 ---
 title: "Kolache"
-description: Reuse CSS packages in muliple projects and across themes.
+description: Reuse CSS packages in muliple projects and across themes
 ---
-If you ever wished you could simply `npm install` a bit of CSS, Kolache makes it possible:
+If you ever wished you could simply `npm install` a bit of CSS, Kolache makes it possible. You can import snippets of CSS from your node_modules directory:
 
 ```css
-@import "button" as .button;
+@import "kolache/core/button" as .button;
 ```
 
 You choose the selector it imports as, so if `.button` collides with a class name you’re already using, you can import to a different class name of your choosing.
