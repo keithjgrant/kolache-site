@@ -1,5 +1,5 @@
 ---
-title: "Core"
+title: "Content"
 date: 2018-02-14T16:29:45-05:00
 description: These core packages are provided in the Kolache library. Use `@import` to import them from `kolache/core/*`.
 weight: -1

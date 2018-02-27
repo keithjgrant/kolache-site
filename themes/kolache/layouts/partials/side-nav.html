@@ -1,6 +1,6 @@
 {{if true}}
 <ul class="side-nav">
-  {{range sort (where .Site.Pages "Section" .Section) ".Params.title"}}
+  {{range sort (where .Site.Pages "Section" .Section) ".Params.weight"}}
     <li>
       <a href="{{.URL}}">{{.Title}}</a>
     </li>

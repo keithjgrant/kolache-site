@@ -3,6 +3,7 @@ title: "Dropdown"
 date: 2018-02-23T21:02:32-05:00
 description: An overlay that you can open and close with the click of a button.
 menu: "main"
+weight: 5
 ---
 
 Kolache dropdowns are designed to work with any sort of content. This will commonly be a stacked list of menu items, but you are not restricted to this. The drawer itself has no padding; be sure that the elements you place inside it have any padding you need.

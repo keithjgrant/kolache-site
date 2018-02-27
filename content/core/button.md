@@ -2,6 +2,7 @@
 title: "Buttons"
 date: 2018-02-14T16:29:45-05:00
 description: I bet you’re gonna need some buttons. Kolache includes a basic button and several common variants.
+weight: 2
 ---
 
 {{< code-example css >}}

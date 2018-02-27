@@ -2,6 +2,7 @@
 title: "Alerts"
 date: 2018-02-20T20:45:15-05:00
 description:
+weight: 1
 ---
 
 `kolache/core/alerts`

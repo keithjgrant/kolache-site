@@ -2,7 +2,7 @@
 title: "Themes"
 date: 2018-02-26T21:07:08-05:00
 description: Define a common look and feel for all modules you import
-Weight: 4
+weight: 4
 ---
 
 The first thing in your stylesheet should be an imported theme file. This file sets a number of preprocessor variables that define colors, fonts, and the general look and feel for your project.
