@@ -3,6 +3,7 @@ title: "Usage"
 date: 2018-02-18T18:52:07-05:00
 menu: "usage"
 description: An essential part of Kolache is the `@import` rule. It works a few ways.
+weight: 3
 ---
 
 ## Partials
@@ -35,7 +36,7 @@ The package’s styles will now be part of your stylesheet.
 
 ### Customizing packages
 
-Packages typically depend on your [theme variables](/getting-started/how-it-works/#theme-variables). This way, it will automatically adapt to the colors, border radius, and other styles defined in your theme.
+Packages typically depend on your [theme variables](/getting-started/themes/). This way, it will automatically adapt to the colors, border radius, and other styles defined in your theme.
 
 This may not be perfectly to your liking, however, so you can override variables used by the package. These changes will be *local*, applied only to this package. It looks like this:
 

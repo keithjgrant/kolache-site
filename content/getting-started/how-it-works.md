@@ -2,9 +2,9 @@
 title: "How it Works"
 date: 2018-02-14T16:29:40-05:00
 menu: "usage"
+description: A standard foundation for any project
+weight: 2
 ---
-
-## A Common Foundation
 
 In order for CSS packages to work across multiple sites, Kolache provides a predictable baseline. This is made up of four parts:
 
@@ -12,6 +12,8 @@ In order for CSS packages to work across multiple sites, Kolache provides a pred
 2. A standardized set of theme variables
 3. A minimal set of non-opinionated base styles
 4. PreCSS (as standardized set of PostCSS plugins)
+
+Because this setup is standard, any Kolache package can depend on it; thus it can be used in any project that uses Kolache. This baseline is configurable and non-opinionated enough that it can work for any CSS project.
 
 ## Normalize.css
 
@@ -27,7 +29,7 @@ The first line of your stylesheet should import the theme you wish to use:
 @import "kolache/core/theme";
 ```
 
-See [core/theme.css](https://github.com/keithjgrant/kolache/blob/master/core/theme.css) for a complete list of variables.
+See [the Themes page](/getting-started/themes) for a detailed look at how Kolache themes work.
 
 ## Base styles
 
