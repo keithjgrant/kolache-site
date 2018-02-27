@@ -1,6 +1,7 @@
 ---
 title: "Usage"
 date: 2018-02-18T18:52:07-05:00
+menu: "usage"
 description: An essential part of Kolache is the `@import` rule. It works a few ways.
 ---
 

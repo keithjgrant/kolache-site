@@ -1,7 +1,7 @@
 ---
-title: "Install & Setup Kolache"
+title: "Getting Started"
 date: 2018-02-14T16:29:34-05:00
-description: How to use Kolache in your workflow
+description: Install and setup Kolache
 ---
 
 ## Installation

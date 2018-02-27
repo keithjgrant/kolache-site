@@ -1,6 +1,3 @@
-# theme.toml template for a Hugo theme
-# See https://github.com/gohugoio/hugoThemes#themetoml for an example
-
 name = "Kolache"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
@@ -19,3 +16,15 @@ min_version = "0.32"
   name = ""
   homepage = ""
   repo = ""
+
+[menu.usage]
+  name = "Getting Started"
+  title = "Getting Started"
+  identifier = "usage"
+  url = "/getting-started/"
+
+[menu.core]
+  name = "Core Modules"
+  title = "Core Modules"
+  identifier = "core"
+  url = "/core/"

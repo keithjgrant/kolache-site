@@ -5,13 +5,19 @@
 </head>
 <body>
   {{partial "header.html"}}
-  <main class="l-container">
-    <h1 class="page-title">{{.Title}}</h1>
-    {{- if .Params.description -}}
-      <p class="lead text-center">{{.Params.description | markdownify}}</p>
-    {{- end -}}
-    {{.Content}}
-  </main>
+
+  <div class="l-documentation main">
+    <nav class="l-documentation__nav">
+      {{partial "side-nav.html" .}}
+    </nav>
+    <main class="l-documentation__main">
+      <h1 class="page-title">{{.Title}}</h1>
+      {{- if .Params.description -}}
+        <p class="lead text-center">{{.Params.description | markdownify}}</p>
+      {{- end -}}
+      <div class="documentation-content">{{.Content}}</div>
+    </main>
+  </div>
   {{partial "footer.html"}}
 </body>
 </html>
