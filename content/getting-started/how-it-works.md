@@ -47,3 +47,9 @@ If you are putting multiple stylesheets on a page, this only needs to be include
 ## PreCSS
 
 After importing all packages into your stylesheet, Kolache then runs it through [PreCSS](https://github.com/jonathantneal/precss) plugin pack. This way, all packages can rely on a common set of plugins like variable processing, nested selectors, and other Sass-like features.
+
+## Not included: Autoprefixer and minifier
+
+Kolache does *not* run your CSS through [Autoprefixer](https://github.com/postcss/autoprefixer). It is **strongly recommended** that you add this to the end of your PostCSS plugin list, as well as a minifier such as [cssnano](http://cssnano.co/). Kolache’s core packages are written without vendor prefixes.
+
+The reason it is not included is so you can add other PostCSS plugins into your build chain after Kolache but before Autoprefixer.

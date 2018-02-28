@@ -30,3 +30,7 @@ You can also selectively override just the variables you want:
 $font-family: Times New Roman, serif;
 $color-primary: #51a3fb;
 ```
+
+## Theme variables
+
+Theme variables are in flux, as Kolache is still in early development. To find the latest set of theme variables, see the [default theme source](https://github.com/keithjgrant/kolache/blob/master/core/theme.css). Once these stabilize, I will document them here in more detail.

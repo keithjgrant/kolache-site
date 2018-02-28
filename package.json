@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "hugo server -p 1315",
-    "kolache":
-      "postcss --use kolache autoprefixer -c postcss.config.js -o themes/kolache/static/css/styles.css themes/kolache/src/css/index.css",
+    "kolache": "postcss --use kolache autoprefixer -c postcss.config.js -o themes/kolache/static/css/styles.css themes/kolache/src/css/index.css",
     "watch": "watch \"npm run kolache\" themes/kolache/src"
   },
   "author": "Keith J. Grant",
