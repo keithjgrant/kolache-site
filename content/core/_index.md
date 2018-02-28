@@ -2,7 +2,7 @@
 title: "Content"
 date: 2018-02-14T16:29:45-05:00
 description: These core packages are provided in the Kolache library. Use `@import` to import them from `kolache/core/*`.
-weight: -1
+weight: -2
 ---
 
 <div class="alert alert--danger">
@@ -60,3 +60,112 @@ Heading styles are applied to `<h1>` through `<h6>` elements. Corresponding clas
 | `<h4></h4>`<br>`<p class="h4"></p>` | <p class="h4">Level Four</p>  |
 | `<h5></h5>`<br>`<p class="h5"></p>` | <p class="h5">Level Five</p>  |
 | `<h6></h6>`<br>`<p class="h6"></p>` | <p class="h6">Level Six</p>   |
+
+## Misc styles
+
+Many other elements are cleaned up and minimally styled, so you can add to their styles however you like.
+
+### Lists
+
+{{< rendered-only >}}
+<ul>
+  <li>item 1</li>
+  <li>
+    item 2
+    <ul>
+      <li>item 2.1</li>
+      <li>item 2.2</li>
+    </ul>
+  </li>
+  <li>item 3</li>
+</ul>
+{{< /rendered-only >}}
+{{< code-example >}}
+<ul>
+  <li>…</li>
+</ul>
+{{< /code-example >}}
+
+{{< rendered-only >}}
+<ol>
+  <li>item 1</li>
+  <li>
+    item 2
+    <ol>
+      <li>item 2.1</li>
+      <li>
+        item 2.2
+        <ol>
+          <li>item 2.2.1</li>
+          <li>item 2.2.2</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>item 3</li>
+</ol>
+{{< /rendered-only >}}
+{{< code-example >}}
+<ol>
+  <li>…</li>
+</ol>
+{{< /code-example >}}
+
+### Tables
+
+{{< rendered-only >}}
+<table>
+  <caption>This is a table caption</caption>
+  <thead>
+    <tr>
+      <th>One</th>
+      <th>Two</th>
+      <th>Three</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table Cell</td>
+    </tr>
+    <tr>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table Cell</td>
+    </tr>
+    <tr>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table Cell</td>
+    </tr>
+  </tbody>
+</table>
+{{< /rendered-only >}}
+{{< code-example >}}
+<table>
+  <caption>…</caption>
+  <thead>
+    <tr>
+      <th>…</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>…</td>
+    </tr>
+  </tbody>
+</table>
+{{< /code-example >}}
+
+### Blockquotes
+
+{{< rendered-only >}}
+<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Etiam iaculis tortor massa, et dictum odio molestie vitae. Quisque
+pulvinar nisi posuere ornare volutpat. Donec bibendum mi vitae fermentum
+convallis. Morbi hendrerit tincidunt mauris in ullamcorper.</blockquote>
+{{< /rendered-only >}}
+{{< code-example >}}
+<blockquote>…</blockquote>
+{{< /code-example >}}

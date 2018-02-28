@@ -99,12 +99,29 @@ pre code {
   border-top-left-radius: 0;
 }
 
+.title-header {
+  margin-bottom: 3.375rem;
+}
+
 .page-title {
+  position: relative;
   margin-top: 1.25em;
+  padding-bottom: 1rem;
   text-align: center;
   font-size: 3.05rem;
   font-weight: $font-weight-black;
   letter-spacing: -0.03em;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -0.15rem;
+    left: 50%;
+    width: 5rem;
+    height: 0.3rem;
+    transform: translateX(-50%);
+    background-color: color-mod($color-success saturation(+30%));
+  }
 }
 
 .text-center {
@@ -134,11 +151,10 @@ pre code {
       margin-top: 0;
     }
   }
-
-  @import "kolache/core/table" as table {
+  @import "kolache/core/table" as "> table" {
     $padding: $padding-small;
   }
-  @import "kolache/core/table:bordered" as table;
+  @import "kolache/core/table:bordered" as "> table";
 }
 
 @import "prism";

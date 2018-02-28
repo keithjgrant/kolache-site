@@ -11,10 +11,7 @@
       {{partial "side-nav.html" .}}
     </nav>
     <main class="l-documentation__main">
-      <h1 class="page-title">{{.Title}}</h1>
-      {{- if .Params.description -}}
-        <p class="lead text-center">{{.Params.description | markdownify}}</p>
-      {{- end -}}
+      {{partial "title-header.html" .}}
       <div class="documentation-content">{{.Content}}</div>
     </main>
   </div>

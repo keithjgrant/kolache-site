@@ -33,3 +33,6 @@
 
 @import "kolache/core/dropdown" as .dropdown;
 @import "kolache/core/nav:stacked" as .nav-stacked;
+
+@import "kolache/core/table" as .table;
+@import "kolache/core/table:bordered" as .table-bordered;

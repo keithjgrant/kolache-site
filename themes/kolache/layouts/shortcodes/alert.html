@@ -1,0 +1,3 @@
+<div class="alert alert--{{.Get 0}}">
+  {{- (trim .Inner "\n\r") | markdownify -}}
+</div>

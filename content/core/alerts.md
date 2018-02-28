@@ -1,7 +1,7 @@
 ---
 title: "Alerts"
 date: 2018-02-20T20:45:15-05:00
-description:
+description: Use a brightly colored container for noticeable user feedback.
 weight: 1
 ---
 
